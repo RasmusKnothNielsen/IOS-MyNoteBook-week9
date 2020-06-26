@@ -13,20 +13,13 @@ class Note {
     var id:String
     var head:String
     var body:String
-    var imageID:String
     
     // Initializer (Constructor)
-    init(id:String, head:String, body:String, imageID:String) {
+    init(id:String, head:String, body:String) {
         self.id = id
         self.head = head
         self.body = body
-        self.imageID = imageID
     }
-    
-    func setImageID(imageID:String){
-        self.imageID = imageID
-    }
-    
-    
     
 }
+
