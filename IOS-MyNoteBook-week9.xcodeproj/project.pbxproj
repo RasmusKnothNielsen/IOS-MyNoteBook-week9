@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		597219F624A62166004BBDB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 597219F424A62166004BBDB9 /* Main.storyboard */; };
 		597219F824A62168004BBDB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 597219F724A62168004BBDB9 /* Assets.xcassets */; };
 		597219FB24A62168004BBDB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 597219F924A62168004BBDB9 /* LaunchScreen.storyboard */; };
+		59721A0424A62282004BBDB9 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59721A0324A62282004BBDB9 /* LocalStorage.swift */; };
+		59721A0624A62297004BBDB9 /* CloudStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59721A0524A62297004BBDB9 /* CloudStorage.swift */; };
+		59721A0924A622B7004BBDB9 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59721A0824A622B7004BBDB9 /* Note.swift */; };
+		59721A0E24A62319004BBDB9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59721A0D24A62319004BBDB9 /* SecondViewController.swift */; };
+		59721A1024A6236A004BBDB9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59721A0F24A6236A004BBDB9 /* GoogleService-Info.plist */; };
 		634A2CE7A17DF8AF27D63324 /* Pods_IOS_MyNoteBook_week9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204B531DB9E63FD2908FD954 /* Pods_IOS_MyNoteBook_week9.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +32,11 @@
 		597219F724A62168004BBDB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		597219FA24A62168004BBDB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		597219FC24A62168004BBDB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59721A0324A62282004BBDB9 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		59721A0524A62297004BBDB9 /* CloudStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudStorage.swift; sourceTree = "<group>"; };
+		59721A0824A622B7004BBDB9 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		59721A0D24A62319004BBDB9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		59721A0F24A6236A004BBDB9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9101EDAE7D89A409272C592 /* Pods-IOS-MyNoteBook-week9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS-MyNoteBook-week9.release.xcconfig"; path = "Target Support Files/Pods-IOS-MyNoteBook-week9/Pods-IOS-MyNoteBook-week9.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,15 +73,36 @@
 		597219ED24A62166004BBDB9 /* IOS-MyNoteBook-week9 */ = {
 			isa = PBXGroup;
 			children = (
+				59721A0724A622A5004BBDB9 /* model */,
+				59721A0224A62268004BBDB9 /* storage */,
 				597219EE24A62166004BBDB9 /* AppDelegate.swift */,
 				597219F024A62166004BBDB9 /* SceneDelegate.swift */,
 				597219F224A62166004BBDB9 /* ViewController.swift */,
+				59721A0D24A62319004BBDB9 /* SecondViewController.swift */,
 				597219F424A62166004BBDB9 /* Main.storyboard */,
 				597219F724A62168004BBDB9 /* Assets.xcassets */,
 				597219F924A62168004BBDB9 /* LaunchScreen.storyboard */,
+				59721A0F24A6236A004BBDB9 /* GoogleService-Info.plist */,
 				597219FC24A62168004BBDB9 /* Info.plist */,
 			);
 			path = "IOS-MyNoteBook-week9";
+			sourceTree = "<group>";
+		};
+		59721A0224A62268004BBDB9 /* storage */ = {
+			isa = PBXGroup;
+			children = (
+				59721A0324A62282004BBDB9 /* LocalStorage.swift */,
+				59721A0524A62297004BBDB9 /* CloudStorage.swift */,
+			);
+			path = storage;
+			sourceTree = "<group>";
+		};
+		59721A0724A622A5004BBDB9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				59721A0824A622B7004BBDB9 /* Note.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		8A71B14D3BD3F4EAA326F584 /* Pods */ = {
@@ -80,7 +111,6 @@
 				063BBC30CA6F9EAB1302DC29 /* Pods-IOS-MyNoteBook-week9.debug.xcconfig */,
 				A9101EDAE7D89A409272C592 /* Pods-IOS-MyNoteBook-week9.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -155,6 +185,7 @@
 				597219FB24A62168004BBDB9 /* LaunchScreen.storyboard in Resources */,
 				597219F824A62168004BBDB9 /* Assets.xcassets in Resources */,
 				597219F624A62166004BBDB9 /* Main.storyboard in Resources */,
+				59721A1024A6236A004BBDB9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,9 +238,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59721A0624A62297004BBDB9 /* CloudStorage.swift in Sources */,
 				597219F324A62166004BBDB9 /* ViewController.swift in Sources */,
+				59721A0424A62282004BBDB9 /* LocalStorage.swift in Sources */,
 				597219EF24A62166004BBDB9 /* AppDelegate.swift in Sources */,
+				59721A0E24A62319004BBDB9 /* SecondViewController.swift in Sources */,
 				597219F124A62166004BBDB9 /* SceneDelegate.swift in Sources */,
+				59721A0924A622B7004BBDB9 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
