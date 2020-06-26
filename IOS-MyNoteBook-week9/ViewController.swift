@@ -41,7 +41,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        CloudStorage.getNotes()
         CloudStorage.startListener()
+        
         // Set these two to self, so the tableview references the app itself
         tableView.dataSource = self
         tableView.delegate = self

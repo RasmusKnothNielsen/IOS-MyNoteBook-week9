@@ -68,9 +68,7 @@ class CloudStorage {
                     self.list.append(newNote)
                 }
             }
-            print("yes")
         }
-        
     }
     
     // Update
